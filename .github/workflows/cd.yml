@@ -14,14 +14,11 @@ jobs:
         node: [14]
     steps:
       - uses: actions/checkout@v2
-      - name: NPM install and run production
+      - name: NPM CI and generate
         shell: bash
         run: |
           npm ci
           npm run generate
-      - name: Add dist folder
-        shell: bash
-        run: git add dist -f
       - name: Check git status
         shell: bash
         run: git status --porcelain
@@ -30,6 +27,6 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add .
+          git add dist -f
           git commit -m "Deployment"
           git push origin +main:gh-pages
