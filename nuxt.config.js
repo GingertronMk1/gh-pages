@@ -5,7 +5,7 @@ export default {
   ssr: false,
 
   generate: {
-    dir: '/docs',
+    dir: 'docs',
   },
 
   // Target: https://go.nuxtjs.dev/config-target
