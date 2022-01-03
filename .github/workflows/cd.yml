@@ -14,6 +14,9 @@ jobs:
         node: [14]
     steps:
       - uses: actions/checkout@v2
+      - name: Make docs folder
+        shell: bash
+        run: mkdir docs
       - name: NPM CI and generate
         shell: bash
         run: |
