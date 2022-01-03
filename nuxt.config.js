@@ -83,7 +83,7 @@ export default {
   },
 
   router: {
-    base: '/gh-pages'
+    base: '/gh-pages',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
