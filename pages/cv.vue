@@ -7,15 +7,15 @@
 
 <script>
 export default {
-  name: 'CVPage',
+  name: "CVPage",
   async asyncData({ $content }) {
-    const page = await $content('cv').fetch()
+    const page = await $content("cv").fetch();
 
     return {
       page,
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss">

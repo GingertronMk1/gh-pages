@@ -32,16 +32,6 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light> mdi-repeat </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
     <v-footer :absolute="!fixed" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
@@ -50,7 +40,7 @@
 
 <script>
 export default {
-  name: 'DefaultLayout',
+  name: "DefaultLayout",
   data() {
     return {
       clipped: false,
@@ -58,21 +48,45 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
+          icon: "mdi-apps",
+          title: "Welcome",
+          to: "/",
         },
         {
-          icon: 'mdi-text-box-outline',
-          title: 'CV',
-          to: '/cv',
+          icon: "mdi-text-box-outline",
+          title: "CV",
+          to: "/cv",
+        },
+        {
+          icon: "mdi-text-box-outline",
+          title: "Counter",
+          to: "/counter",
+        },
+        {
+          icon: "mdi-text-box-outline",
+          title: "NNT Things",
+          to: "/nntthings",
+        },
+        {
+          icon: "mdi-text-box-outline",
+          title: "Permissions Generator",
+          to: "/permissions",
+        },
+        {
+          icon: "mdi-text-box-outline",
+          title: "Season Generator",
+          to: "/seasongen",
+        },
+        {
+          icon: "mdi-text-box-outline",
+          title: "Text Generator",
+          to: "/textgen",
         },
       ],
       miniVariant: false,
       right: true,
-      rightDrawer: false,
-      title: 'Jack Ellis',
-    }
+      title: "Jack Ellis",
+    };
   },
-}
+};
 </script>
