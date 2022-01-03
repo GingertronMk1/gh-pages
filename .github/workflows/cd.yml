@@ -1,0 +1,30 @@
+name: Deployment
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: NPM install and run production
+        shell: bash
+        run: |
+          npm ci
+          npm run generate
+      - name: Add dist folder
+        shell: bash
+        run: git add dist
+      - name: Check git status
+        shell: bash
+        run: git status --porcelain
+      - name: Add and commit new files
+        shell: bash
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Deployment"
+          git push origin +main:gh-pages
