@@ -3,16 +3,18 @@ title: CV
 ---
 
 # Profile
+
 I am a Computer Science graduate with a 2:1 MSci.
 I have excellent communication and administrative skills developed from being a member of a number of committees during my time at the University of Nottingham.
 I am a strong worker under pressure, able to quickly make decisions based on information available to me, and I have a good ability to convert someone's request into a more technical format, whatever that format might be.
 I am also a strong collaborator within a team, and am always keen to share any experience, tips, or tricks with those who need or want them in order for the team I am a part of to be as strong as it can be.
 
-------
+---
 
 # Previous Employment
 
 ### We Are Sweet
+
 ##### Developer, July 2020 - present
 
 Responsible for the maintenance, support, and feature adding of major PHP projects, including a building management web application and an elderly care provider system. Within these projects I have worked specifically on back-end improvements, including a bulk import system, an SMS-based job signoff system, and a document publishing scheduler.
@@ -20,6 +22,7 @@ Responsible for the maintenance, support, and feature adding of major PHP projec
 Alongside these development roles I am also responsible for the curation of social media posts within the company as "Social Media Champion".
 
 ### Fifteen Design
+
 ##### Back-End Developer, October 2019 - March 2020
 
 Responsible for the development and maintenance of a number of php-based websites, built using WordPress, Laravel, and Symfony.
@@ -31,37 +34,37 @@ Also tasked with updating the website for Birmingham Metropolitan College with n
 Finally engaged in client-facing support work, handling tickets using Freshdesk and communicating directly with clients regarding the status of their work.
 
 ### Imaginaire Digital
+
 ##### Web Developer, August 2019 - September 2019
 
 Responsible for the development of a client website using Wordpress and a custom theme, as well as an internal dashboard system built in Laravel and Laravel Nova.
 Additional to this I was involved in creating automation scripts for easier creation of development environments.
 
-
-------
+---
 
 # Education
 
-|                           |                                                 |
-|---------------------------|-------------------------------------------------|
-| University of Nottingham  | 2:1 MSci in Computer Science, 2015-2019         |
-|                           | - 72% Dissertation, Creating Frogger in Haskell   |
-|                           | - 70% Software Quality Assurance                  |
-|                           | - 90% Software Engineering Group Project          |
-|                           | - 75% Advanced Algorithms and Data Structures     |
-| Beverley Joint 6th Form   | A-Levels, 2013-2015                             |
-|                           | - A Maths                                         |
-|                           | - B Physics                                       |
-|                           | - B Chemistry                                     |
-| Beverley Grammar School   | GCSEs, 2011-2013                                |
-|                           | - A* GCSE Additional Science                      |
-|                           | - A GCSE English Language                         |
-|                           | - A GCSE Mathematics                              |
-|                           | - B GCSE English Literature                       |
-|                           | - B GCSE German                                   |
-|                           | - B GCSE Statistics                               |
-|                           | - C GCSE Electronic Products                      |
+|                          |                                                 |
+| ------------------------ | ----------------------------------------------- |
+| University of Nottingham | 2:1 MSci in Computer Science, 2015-2019         |
+|                          | - 72% Dissertation, Creating Frogger in Haskell |
+|                          | - 70% Software Quality Assurance                |
+|                          | - 90% Software Engineering Group Project        |
+|                          | - 75% Advanced Algorithms and Data Structures   |
+| Beverley Joint 6th Form  | A-Levels, 2013-2015                             |
+|                          | - A Maths                                       |
+|                          | - B Physics                                     |
+|                          | - B Chemistry                                   |
+| Beverley Grammar School  | GCSEs, 2011-2013                                |
+|                          | - A\* GCSE Additional Science                   |
+|                          | - A GCSE English Language                       |
+|                          | - A GCSE Mathematics                            |
+|                          | - B GCSE English Literature                     |
+|                          | - B GCSE German                                 |
+|                          | - B GCSE Statistics                             |
+|                          | - C GCSE Electronic Products                    |
 
-------
+---
 
 # Technical Skills/Projects
 
@@ -93,7 +96,7 @@ Additional to this I was involved in creating automation scripts for easier crea
 - GitHub
 - IntelliJ
 
-For my Master's dissertation I recreated the game *Frogger* using the Haskell functional programming language.
+For my Master's dissertation I recreated the game _Frogger_ using the Haskell functional programming language.
 Within this I gathered requirements, created a development plan, and implemented an object-oriented approach in the functional language.
 I carried out user testing and adjusted various aspects of the game based upon feedback from the test subjects, as well as making use of the Travis CI suite.
 The code and documentation can be found [here](https://github.com/GingertronMk1/Dissertation).
@@ -101,7 +104,7 @@ The code and documentation can be found [here](https://github.com/GingertronMk1/
 In addition to the projects I worked on as part of my degree I am also a contributor to the Nottingham New Theatre History Project, in a predominantly data entry role.
 As well as this I created a website designed to show statistics and information about the links between actors at the Nottingham New Theatre, using JavaScript and the d3 library, available [here](/nnt_stats/main/), with the code available [here](https://github.com/GingertronMk1/gingertronmk1.github.io/tree/master/nnt_stats).
 
-------
+---
 
 # Additional Experience and Extracurriculars
 

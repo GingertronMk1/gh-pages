@@ -8,11 +8,11 @@
 <script>
 export default {
   name: 'CVPage',
-  async asyncData ({ $content }) {
+  async asyncData({ $content }) {
     const page = await $content('cv').fetch()
 
     return {
-      page
+      page,
     }
   },
 }
@@ -38,4 +38,3 @@ export default {
   }
 }
 </style>
-
