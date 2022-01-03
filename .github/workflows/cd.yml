@@ -21,7 +21,7 @@ jobs:
           npm run generate
       - name: Add dist folder
         shell: bash
-        run: git add dist
+        run: git add dist -f
       - name: Check git status
         shell: bash
         run: git status --porcelain
