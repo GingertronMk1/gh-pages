@@ -4,10 +4,6 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
-  generate: {
-    dir: 'docs',
-  },
-
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -86,9 +82,9 @@ export default {
     },
   },
 
-  router: {
-    base: '/gh-pages',
-  },
+  // router: {
+  //   base: '/gh-pages',
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
