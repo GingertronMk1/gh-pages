@@ -8,8 +8,8 @@
 <script>
 export default {
   name: "CVPage",
-  async asyncData({ $content }) {
-    const page = await $content("cv").fetch();
+  async asyncData({ $content, params }) {
+    const page = await $content("cvs", params.slug).fetch();
 
     return {
       page,

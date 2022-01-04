@@ -18,14 +18,14 @@
 
     <table v-if="permutations.length" class="season-gen__table">
       <tr>
-        <th v-for="n in numSlots" :key="n">Slot {{ n }}</th>
+        <th v-for="n in numSlots" :key="n" v-text="`Slot ${n}`" />
       </tr>
       <tr v-for="(perm, perm_index) in permutations" :key="perm_index">
         <td
           v-for="(show, show_index) in perm"
           :key="show_index"
           v-text="show"
-        ></td>
+        />
       </tr>
     </table>
     <h2 v-else>No valid seasons exist</h2>
@@ -74,7 +74,7 @@ export default {
         .map(({ slots }) => slots)
         .flat()
         .map((slot) => parseInt(slot))
-        .reduce((acc, slot) => Math.max(acc, slot), 0);
+        .reduce((acc, slot) => (isNaN(slot) ? acc : Math.max(acc, slot)), 0);
     },
     preferences() {
       if (this.arrayShowsSlots.length) {

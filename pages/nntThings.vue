@@ -2,27 +2,11 @@
   <div class="nnt_things">
     <template v-if="Array.isArray(search) && search.length > 1">
       <div class="nnt_things__info">
-        <label for="includeFreshersFringe" class="nnt_things__include-checkbox">
-          Include Freshers' Fringe?
-          <input
-            id="includeFreshersFringe"
-            v-model="includeFreshersFringe"
-            type="checkbox"
-            name="includeFreshersFringe"
-          />
-        </label>
-        <label
-          for="includeTwentyFifteenOnward"
-          class="nnt_things__include-checkbox"
-        >
-          2015 on?
-          <input
-            id="includeTwentyFifteenOnward"
-            v-model="includeTwentyFifteenOnward"
-            type="checkbox"
-            name="includeTwentyFifteenOnward"
-          />
-        </label>
+        <ButtonCheckbox
+          v-model="includeFreshersFringe"
+          label="Include Freshers' Fringe?"
+        />
+        <ButtonCheckbox v-model="includeTwentyFifteenOnward" label="2015 on?" />
 
         <span>
           {{ shows.length }} shows with {{ Object.keys(people).length }} actors
@@ -134,7 +118,7 @@
 </template>
 <script>
 import axios from "axios";
-import { findShortestPath } from "../functions.js";
+import { findShortestPath } from "@/assets/js/functions.js";
 
 export default {
   props: {},

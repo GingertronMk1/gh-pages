@@ -9,6 +9,8 @@ I have excellent communication and administrative skills developed from being a 
 I am a strong worker under pressure, able to quickly make decisions based on information available to me, and I have a good ability to convert someone's request into a more technical format, whatever that format might be.
 I am also a strong collaborator within a team, and am always keen to share any experience, tips, or tricks with those who need or want them in order for the team I am a part of to be as strong as it can be.
 
+<hr />
+
 # Previous Employment
 
 ### We Are Sweet
@@ -38,6 +40,8 @@ Finally engaged in client-facing support work, handling tickets using Freshdesk 
 Responsible for the development of a client website using Wordpress and a custom theme, as well as an internal dashboard system built in Laravel and Laravel Nova.
 Additional to this I was involved in creating automation scripts for easier creation of development environments.
 
+<hr />
+
 # Education
 
 |                          |                                                 |
@@ -59,6 +63,8 @@ Additional to this I was involved in creating automation scripts for easier crea
 |                          | - B GCSE German                                 |
 |                          | - B GCSE Statistics                             |
 |                          | - C GCSE Electronic Products                    |
+
+<hr />
 
 # Technical Skills/Projects
 
@@ -97,6 +103,8 @@ The code and documentation can be found [here](https://github.com/GingertronMk1/
 
 In addition to the projects I worked on as part of my degree I am also a contributor to the Nottingham New Theatre History Project, in a predominantly data entry role.
 As well as this I created a website designed to show statistics and information about the links between actors at the Nottingham New Theatre, using JavaScript and the d3 library, available [here](/nnt_stats/main/), with the code available [here](https://github.com/GingertronMk1/gingertronmk1.github.io/tree/master/nnt_stats).
+
+<hr />
 
 # Additional Experience and Extracurriculars
 

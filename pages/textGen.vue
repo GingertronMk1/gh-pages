@@ -18,7 +18,7 @@
         v-model="input_text"
         rows="7"
         :class="input_class"
-      ></textarea>
+      />
       <button class="p-2" @click="toggleFloat()">Toggle Floating Editor</button>
     </div>
     <div id="all-texts-div" class="risky-texts__display">
@@ -27,7 +27,7 @@
         :key="index"
         :class="text.messageClasses"
       >
-        <div :class="text.textClasses" v-text="text.message"></div>
+        <div :class="text.textClasses" v-text="text.message" />
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-name: CI/CD
+name: ci
 
 on:
   push:
@@ -11,8 +11,13 @@ on:
       - master
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
+  ci:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [14]
 
     steps:
       - name: Checkout 🛎
@@ -21,7 +26,7 @@ jobs:
       - name: Setup node env 🏗
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: 12
+          node-version: ${{ matrix.node }}
           check-latest: true
 
       - name: Cache node_modules 📦
@@ -37,24 +42,4 @@ jobs:
 
       - name: Run linter 👀
         run: npm run lint
-  build:
-    needs: [test]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: NPM CI and generate
-        shell: bash
-        run: |
-          npm ci
-          npm run generate
-      - name: Check git status
-        shell: bash
-        run: git status --porcelain
-      - name: Add and commit new files
-        shell: bash
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add dist -f
-          git commit -m "Deployment"
-          git push origin `git subtree split --prefix dist main`:gh-pages --force
+
