@@ -50,6 +50,10 @@ export default {
     baseURL: "/",
   },
 
+  routing: {
+    base: "/gh-pages",
+  },
+
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
