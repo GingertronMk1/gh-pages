@@ -1,5 +1,5 @@
 ---
-title: CV
+title: Developer CV
 ---
 
 # Profile

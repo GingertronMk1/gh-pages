@@ -290,7 +290,7 @@ export default {
   }
 
   &__info {
-    @include flex(row, space-around, center);
+    @include flex(row, space-around, stretch);
     margin: 1rem 0;
 
     & > * {

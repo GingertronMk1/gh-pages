@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <NavBar />
-    <Nuxt />
+    <Nuxt class="body__inner" :class="routePath" />
   </div>
 </template>
 <script>
@@ -10,6 +10,12 @@ export default {
   props: {},
   data() {
     return {};
+  },
+  computed: {
+    routePath() {
+      const path = this.$route.path.replace("/", "_");
+      return path === "_" ? "index" : path;
+    },
   },
   mounted() {},
   methods: {},

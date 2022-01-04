@@ -40,13 +40,14 @@ export default {
 
 <style lang="scss">
 .button-checkbox {
+  @include flex(row, center, stretch);
   position: relative;
 
   input {
     display: none;
 
     & + label {
-      display: inline-block;
+      @include flex(column, center, stretch);
       padding: 0.5em 1em;
       background-color: $white;
       color: $primary;

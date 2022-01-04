@@ -2,6 +2,10 @@
   @include flex(row, space-between, stretch);
   padding: 0.2rem;
   z-index: 10;
+  position: fixed;
+  width: 100%;
+  height: $nav-margin;
+  background: $standard-background;
 
   &__link {
     flex: 1;
@@ -18,9 +22,8 @@
 
     &--active {
       background: $standard-background;
-      // background-color: $primary;
       color: $white;
-      border-color: $primary;
+      border-color: $white;
     }
 
     &:hover {
@@ -41,6 +44,9 @@
     width: 100%;
     background-color: $white;
     z-index: 10;
+    border-radius: 0.25rem;
+    border: 2px solid $primary;
+    padding: 0.1rem;
   }
 
   &__link:hover > &__submenu {
