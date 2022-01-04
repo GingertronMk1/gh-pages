@@ -4,9 +4,12 @@
     :to="link.to"
     class="nav__link"
     active-class="nav__link--active"
-    v-text="link.name"
-  />
+  >
+    <i v-if="link.icon !== undefined" :class="link.icon" />
+    {{ link.name }}
+  </NuxtLink>
   <div v-else-if="Array.isArray(link.links)" class="nav__link">
+    <i v-if="link.icon !== undefined" :class="link.icon" />
     {{ link.name }}
     <div class="nav__submenu">
       <NavItem

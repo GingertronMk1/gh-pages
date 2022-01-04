@@ -14,22 +14,27 @@ export default {
         {
           name: "Home",
           to: "/",
+          icon: "fas fa-home",
         },
         {
           name: "CVs",
+          icon: "fas fa-user-tie",
           links: [
             {
               name: "Developer",
               to: "/cv/dev",
+              icon: "fas fa-laptop-code",
             },
             {
               name: "Theatre Person",
               to: "/cv/theatre",
+              icon: "fas fa-theater-masks",
             },
           ],
         },
         {
           name: "Vue Utilities",
+          icon: "fas fa-wrench",
           links: [
             {
               name: "Counter",
