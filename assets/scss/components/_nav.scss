@@ -1,6 +1,7 @@
 .nav {
   @include flex(row, space-between, stretch);
   padding: 0.2rem;
+  z-index: 10;
 
   &__link {
     flex: 1;
@@ -39,6 +40,7 @@
     left: 0;
     width: 100%;
     background-color: $white;
+    z-index: 10;
   }
 
   &__link:hover > &__submenu {

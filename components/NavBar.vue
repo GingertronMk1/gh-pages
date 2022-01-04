@@ -12,27 +12,49 @@ export default {
     return {
       links: [
         {
-          name: "Counter",
-          to: "/counter",
+          name: "Home",
+          to: "/",
         },
         {
-          name: "NNT Things",
-          to: "/nntthings",
-        },
-        {
-          name: "Permissions",
-          to: "/permissions",
-        },
-        {
-          name: "Generators",
+          name: "CVs",
           links: [
             {
-              name: "Season Generator",
-              to: "/seasongen",
+              name: "Developer",
+              to: "/cv/dev",
             },
             {
-              name: "Text Generator",
-              to: "/textgen",
+              name: "Theatre Person",
+              to: "/cv/theatre",
+            },
+          ],
+        },
+        {
+          name: "Vue Utilities",
+          links: [
+            {
+              name: "Counter",
+              to: "/counter",
+            },
+            {
+              name: "NNT Things",
+              to: "/nntthings",
+            },
+            {
+              name: "Permissions",
+              to: "/permissions",
+            },
+            {
+              name: "Generators",
+              links: [
+                {
+                  name: "Season Generator",
+                  to: "/seasongen",
+                },
+                {
+                  name: "Text Generator",
+                  to: "/textgen",
+                },
+              ],
             },
           ],
         },
@@ -43,5 +65,3 @@ export default {
   methods: {},
 };
 </script>
-
-<style lang="scss"></style>
