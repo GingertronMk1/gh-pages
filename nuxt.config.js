@@ -50,7 +50,7 @@ export default {
     baseURL: "/",
   },
 
-  routing: {
+  router: {
     base: "/gh-pages",
   },
 

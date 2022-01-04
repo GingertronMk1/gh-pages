@@ -1,4 +1,4 @@
-name: ci
+name: Build and commit to live branch
 
 on:
   push:
